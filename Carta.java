@@ -10,6 +10,7 @@ public static final String JOKER =  "joker";
 private boolean isJoker = false;
 private int numero;
 private String palo;
+private boolean esRojo;
 
 public Carta(String palo, int numero) {
   palo = palo.toLowerCase();
@@ -17,6 +18,9 @@ public Carta(String palo, int numero) {
     if (numero>=1 && numero<=13 ) {
       this.numero=numero;
       this.palo = palo;
+      if (palo.equals(CORAZONES) || palo.equals(DIAMANTES)) {
+        esRojo=true;
+      }
     }
   }
 }
@@ -46,6 +50,14 @@ public String toString() {
   } else {
     return numero + " de " + palo;
   }
+}
+
+public boolean esRoja() {
+  return esRojo;
+}
+
+public boolean esNegra() {
+  return !esRojo;
 }
 
 
