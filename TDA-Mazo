@@ -1,2 +1,13 @@
 Tipo: Mazo
-Declaración de tipo: Carta
+Declaración de tipo: Mazo, Carta[]
+Características:
+  El valor abstracto de un mazo será un arreglo de cartas
+  Los objetos no son modificables
+Operaciones:
+  función crearMazo() retorna Mazo
+  función getMazo() retorna Carta[]
+  función obtenerCarta(palo:String,número:int) retorna Carta
+  función ordenarPorPalo()
+  función ordenarPorNúmero()
+  función mezclarMazo()
+fin mazo
