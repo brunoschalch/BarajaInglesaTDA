@@ -8,6 +8,22 @@ public class Mazo {
   
   private void generarMazo() {
     //generar carta por carta y llenar arreglo
+    //empezar por espadas, seguir con diamantes, treboles y corazones
+    for (int i=0; i<54 ; i++) {
+      if (i<13) {
+        cartas[i]=new Carta(Carta.ESPADAS, (i+1));
+      } else if (i<26) {
+         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%13);
+      } else if (i<39) {
+         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%13);
+      } else if (i<52) {
+         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%13);
+      } else {
+        cartas[i] = new Carta();
+      }
+      
+    }
+    
   }
   
   public Carta regresarCartaenPosicion(int index) {
