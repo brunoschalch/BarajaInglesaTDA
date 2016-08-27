@@ -13,11 +13,11 @@ public class Mazo {
       if (i<13) {
         cartas[i]=new Carta(Carta.ESPADAS, (i+1));
       } else if (i<26) {
-         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%13);
+         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%14);
       } else if (i<39) {
-         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%13);
+         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%14);
       } else if (i<52) {
-         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%13);
+         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%14);
       } else {
         cartas[i] = new Carta();
       }
