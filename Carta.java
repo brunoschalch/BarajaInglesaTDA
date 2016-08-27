@@ -57,6 +57,8 @@ public String toString() {
     return "Queen" + " de " + palo;
   } else if (numero == 13) {
     return "King" + " de " + palo;
+  } else {
+    return "error";
   }
 }
 
