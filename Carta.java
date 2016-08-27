@@ -47,8 +47,16 @@ public String getPalo() {
 public String toString() {
   if (isJoker) {
     return "Joker";
-  } else {
+  } else if (numero==1) {
+    return "Ace" + " de " + palo;
+  }  else if (numero<=10) {
     return numero + " de " + palo;
+  } else if (numero == 11) {
+    return "Jack" + " de " + palo;
+  } else if (numero == 11) {
+    return "Queen" + " de " + palo;
+  } else if (numero == 11) {
+    return "King" + " de " + palo;
   }
 }
 
