@@ -35,6 +35,14 @@ public class Mazo {
     }
   
   }
+  
+  public String toString() {
+    String regresar="";
+    for (Carta carta : cartas) {
+      regresar+=carta+"\n";
+    }
+    return regresar;
+  }
 
 
 
