@@ -42,6 +42,10 @@ public class Mazo {
     }
     return regresar;
   }
+  
+  public Carta[] getMazo() {
+    return cartas;
+  }
 
 
 
