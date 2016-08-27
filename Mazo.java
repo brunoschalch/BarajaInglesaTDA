@@ -13,17 +13,16 @@ public class Mazo {
       if (i<13) {
         cartas[i]=new Carta(Carta.ESPADAS, (i+1));
       } else if (i<26) {
-         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%14);
+         cartas[i]=new Carta(Carta.DIAMANTES, (i%13+1));
       } else if (i<39) {
-         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%14);
+         cartas[i]=new Carta(Carta.TREBOLES, (i%13+1));
       } else if (i<52) {
-         cartas[i]=new Carta(Carta.ESPADAS, (i+1)%14);
+         cartas[i]=new Carta(Carta.CORAZONES, (i%13+1));
       } else {
         cartas[i] = new Carta();
       }
-      
     }
-    
+
   }
   
   public Carta regresarCartaenPosicion(int index) {
