@@ -6,8 +6,5 @@ Características:
 Operaciones:
   función crearMazo() retorna Mazo
   función getMazo() retorna Carta[]
-  función obtenerCarta(palo:String,número:int) retorna Carta
-  función ordenarPorPalo()
-  función ordenarPorNúmero()
   función mezclarMazo()
 fin mazo
