@@ -1,11 +1,11 @@
 Tipo: Carta
-Declaración de tipos: Palo, número
+Declaración de tipos: Palo, int, String
 Características:
   Valor abstracto de una carta de baraja inglesa definida por un número y un palo
   Los objetos no son modificables
 Operaciones:
   función crearCarta(palo:String,número:int) retorna carta
-  función getPalo() retorna palo
-  función getNúmero() retorna número
-  función color() retorna String
+  función getPalo() retorna String
+  función getNúmero() retorna int
+  función esRoja() retorna boolean
 fin carta
