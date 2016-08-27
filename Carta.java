@@ -53,9 +53,9 @@ public String toString() {
     return numero + " de " + palo;
   } else if (numero == 11) {
     return "Jack" + " de " + palo;
-  } else if (numero == 11) {
+  } else if (numero == 12) {
     return "Queen" + " de " + palo;
-  } else if (numero == 11) {
+  } else if (numero == 13) {
     return "King" + " de " + palo;
   }
 }
