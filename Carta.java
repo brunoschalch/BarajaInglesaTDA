@@ -1,4 +1,4 @@
-public class Carta {
+public class Carta implements Comparable {
   
 public static final String ESPADAS =  "espadas";
 public static final String DIAMANTES =  "diamantes";
@@ -12,7 +12,7 @@ private int numero;
 private String palo;
 private boolean esRojo;
 
-private final int sortingID;
+public final int sortingID;
 
 //el sortingID sirve para poder comparar cartas (mayor a, menor a e igual a)
 public Carta(String palo, int numero) {
@@ -85,16 +85,16 @@ public boolean esNegra() {
   return !esRojo;
 }
 
-public boolean esMayor() {
-
+public boolean esMayor(Carta otra) {
+  return this.sortingID>otra.sortingID;
 }
 
-public boolean esMenor() {
-  
+public boolean esMenor(Carta otra) {
+  return this.sortingID<otra.sortingID;
 }
 
-public boolean esIgual() {
-  
+public boolean esIgual(Carta otra) {
+  return this.sortingID==otra.sortingID;
 }
 
 
