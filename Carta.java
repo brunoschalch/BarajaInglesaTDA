@@ -14,8 +14,8 @@ private boolean esRojo;
 
 private int sortingID;
 
-//el sortingID sirve para que la clase Mazo genere un orden arbitrario y se lo asigne a la carta.
-public Carta(String palo, int numero, int sortingID) {
+//el sortingID sirve para poder comparar cartas (mayor a, menor a e igual a)
+public Carta(String palo, int numero) {
   palo = palo.toLowerCase();
   if (palo.equals(ESPADAS) || palo.equals(DIAMANTES) || palo.equals(TREBOLES) || palo.equals(CORAZONES) ) {
     if (numero>=1 && numero<=13 ) {
