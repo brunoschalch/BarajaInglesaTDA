@@ -12,7 +12,7 @@ private int numero;
 private String palo;
 private boolean esRojo;
 
-private int sortingID;
+private final int sortingID;
 
 //el sortingID sirve para poder comparar cartas (mayor a, menor a e igual a)
 public Carta(String palo, int numero) {
@@ -26,6 +26,18 @@ public Carta(String palo, int numero) {
       }
     }
   }
+  
+  if (palo.equals(ESPADAS)) {
+    sortingID = numero-1;
+  } else if (palo.equals(DIAMANTES)) {
+    sortingID = numero+12;
+  } else if (palo.equals(TREBOLES)) {
+    sortingID = numero+25;
+  } else {
+    sortingID = numero+38;
+  }
+  
+  
 }
 
 
@@ -73,8 +85,16 @@ public boolean esNegra() {
   return !esRojo;
 }
 
-public int getSortingID() {
-  return sortingID;
+public boolean esMayor() {
+
+}
+
+public boolean esMenor() {
+  
+}
+
+public boolean esIgual() {
+  
 }
 
 
