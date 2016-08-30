@@ -12,7 +12,10 @@ private int numero;
 private String palo;
 private boolean esRojo;
 
-public Carta(String palo, int numero) {
+private int sortingID;
+
+//el sortingID sirve para que la clase Mazo genere un orden arbitrario y se lo asigne a la carta.
+public Carta(String palo, int numero, int sortingID) {
   palo = palo.toLowerCase();
   if (palo.equals(ESPADAS) || palo.equals(DIAMANTES) || palo.equals(TREBOLES) || palo.equals(CORAZONES) ) {
     if (numero>=1 && numero<=13 ) {
@@ -68,6 +71,10 @@ public boolean esRoja() {
 
 public boolean esNegra() {
   return !esRojo;
+}
+
+public int getSortingID() {
+  return sortingID;
 }
 
 
