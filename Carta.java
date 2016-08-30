@@ -45,6 +45,7 @@ public Carta() {
     //CARTA JOKER
     isJoker=true;
     this.palo = JOKER;
+    sortingID = 52;
 }
 
 public boolean isJoker() {
