@@ -1,4 +1,4 @@
-public class Carta implements Comparable {
+public class Carta implements Comparable<Carta> {
   
 public static final String ESPADAS =  "espadas";
 public static final String DIAMANTES =  "diamantes";
