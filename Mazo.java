@@ -49,6 +49,15 @@ public class Mazo {
 
 public void shuffle() {
   
+  for (int i = 0; i<52; i++) {
+     Random rand;
+ // nextInt es exlusivo en el limite superior
+    int j = rand.nextInt((54 - i)) + i;
+    //intercambiar a[j] y a[i]
+    Carta temp = cartas[j];
+    cartas[j]=cartas[i];
+    cartas[i]=temp;
+  }
   
 }
 
