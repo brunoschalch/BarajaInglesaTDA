@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Mazo {
   
   private Carta[] cartas= new Carta[54];
