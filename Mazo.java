@@ -47,6 +47,10 @@ public class Mazo {
     return cartas;
   }
 
+public void shuffle() {
+  
+  
+}
 
 
 }
