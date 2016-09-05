@@ -33,8 +33,10 @@ public Carta(String palo, int numero) {
     sortingID = numero+12;
   } else if (palo.equals(TREBOLES)) {
     sortingID = numero+25;
-  } else {
+  } else if (palo.equals(CORAZONES)) {
     sortingID = numero+38;
+  } else {
+  	sortingID = -1;
   }
   
   
